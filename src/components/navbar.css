@@ -15,6 +15,9 @@
     font-weight: 500;
 }
 
+.navbar-cart-link {
+    text-wrap: nowrap;
+}
 .navbar-cart-count {
     position: relative;
     bottom: 8px;

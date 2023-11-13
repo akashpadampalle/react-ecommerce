@@ -1,0 +1,24 @@
+
+.product-buttons > * {
+    text-decoration: none;
+    color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+.product-button-edit {
+    background-color: rgb(204, 109, 0);
+}
+
+.product-button-delete {
+    background-color: rgb(122, 17, 17);
+}
+
+.product-button-cart {
+    background-color: rgb(31, 100, 31);
+}

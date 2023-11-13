@@ -47,7 +47,7 @@ export const updateProduct = createAsyncThunk("products/update", async (product,
     return { ...product, id }
 })
 
-const deleteProduct = createAsyncThunk("products/delete", async (id, {getState}) => {
+export const deleteProduct = createAsyncThunk("products/delete", async (id, {getState}) => {
     const existingProduct = selectProductById(getState(), id)
 
     if (!existingProduct) {
@@ -94,6 +94,7 @@ const productsSlice = createSlice({
 
 export const {
     selectAll: selectAllProducts,
+    selectIds: selectAllProductsIds,
     selectById: selectProductById,
 } = productsAdapter.getSelectors(state => state.products)
 

@@ -5,6 +5,7 @@ import Cart from './features/cart/Cart'
 import ProductsList from './features/product/ProductsList'
 import ProductDetails from './features/product/ProductDetails'
 import ProudctCreateForm from './features/product/ProductCreateForm'
+import ProductEditForm from './features/product/ProductEditForm'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
           { 
             path: ":id", 
             element: <ProductDetails /> 
+          },
+          {
+            path: "edit/:id",
+            element: <ProductEditForm />
           }
         ]
       },

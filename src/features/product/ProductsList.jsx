@@ -5,12 +5,15 @@ import "./productsList.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import ProductButtons from '../../components/ProductButtons'
+import { useNavigate } from 'react-router-dom'
+
 
 const ProductItem = ({ id }) => {
   const product = useSelector(state => selectProductById(state, id))
+  const navigate = useNavigate()
 
   return (
-    <div className='products-list-item' key={product.id}>
+    <div onClick={() => navigate(`/products/${product.id}`)} className='products-list-item' key={product.id}>
       <div className='products-list-item-img'>
         <img src={product.image} />
       </div>
@@ -24,7 +27,7 @@ const ProductItem = ({ id }) => {
         <p className='products-list-item-description'>
           {
             (product.description.length > 100)
-              ? `${product.description.subsrting(0, 100)}...`
+              ? `${product.description.substring(0, 100)}...`
               : product.description
           }
         </p>
@@ -43,8 +46,7 @@ const ProductsList = () => {
 
   const productsIds = useSelector(selectAllProductsIds)
 
-
-  if (!productsIds) {
+  if (!productsIds?.length) {
     return (<p className="products-nothing">Noting is available right now</p>)
   }
 

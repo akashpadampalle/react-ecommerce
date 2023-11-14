@@ -15,9 +15,6 @@ export const fetchCart = createAsyncThunk('cart/fetch', async () => {
 })
 
 export const addItemToCart = createAsyncThunk("cart/add", async (item, { getState }) => {
-
-    console.log("adding item", item)
-
     const product = selectProductById(getState(), item.id)
 
     if (!product) {

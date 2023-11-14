@@ -1,0 +1,23 @@
+.product-create-title {
+    color: rgb(192, 196, 196);
+    text-align: center;
+}
+
+.product-create-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-input-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.product-input-container textarea {
+    resize: none;
+}

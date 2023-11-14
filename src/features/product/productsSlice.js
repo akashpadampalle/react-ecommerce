@@ -21,7 +21,9 @@ export const addProduct = createAsyncThunk("products/add", async (product) => {
             body: JSON.stringify(product)
         }
     )
-    data = await res.json()
+
+    const data = await res.json()
+
     return { ...product, ...data }
 })
 
@@ -81,6 +83,9 @@ const productsSlice = createSlice({
             })
             .addCase(addProduct.fulfilled, (state, action) => {
                 productsAdapter.addOne(state, action.payload)
+            })
+            .addCase(addProduct.rejected, (state, action) => {
+                console.log(action.error.message)
             })
             .addCase(updateProduct.fulfilled, (state, action) => {
                 // state.entities[action.payload.id] = action.payload

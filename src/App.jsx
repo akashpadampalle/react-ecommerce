@@ -1,11 +1,11 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
-import Cart from './features/cart/Cart'
 import ProductsList from './features/product/ProductsList'
 import ProductDetails from './features/product/ProductDetails'
 import ProudctCreateForm from './features/product/ProductCreateForm'
 import ProductEditForm from './features/product/ProductEditForm'
+import CartList from './features/cart/CartList'
 
 
 const router = createBrowserRouter([
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       },
       { 
         path: "cart", 
-        element: <Cart /> 
+        element: <CartList /> 
       }
     ]
   }

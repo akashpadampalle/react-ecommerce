@@ -15,7 +15,7 @@ const ProductItem = ({ id }) => {
   return (
     <div onClick={() => navigate(`/products/${product.id}`)} className='products-list-item' key={product.id}>
       <div className='products-list-item-img'>
-        <img src={product.image} />
+        <img src={product.image} loading='lazy' />
       </div>
       <div className='products-list-item-metadata'>
 
@@ -33,7 +33,7 @@ const ProductItem = ({ id }) => {
         </p>
 
         <p className='products-list-item-price'>
-          ₹ {product.price}
+          ₹ {Number(product.price).toFixed(2)}
         </p>
         <ProductButtons id={product.id} />
       </div>

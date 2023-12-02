@@ -21,3 +21,22 @@
 .product-input-container textarea {
     resize: none;
 }
+
+.add-product-button {
+    text-decoration: none;
+    color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(31, 100, 31);
+}
+
+.add-product-button > :first-child {
+    margin-right: 5px;
+
+}

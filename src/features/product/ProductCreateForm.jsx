@@ -131,7 +131,7 @@ const ProudctCreateForm = () => {
           >
           </textarea>
         </div>
-        <button><FontAwesomeIcon icon={faSave} />Add</button>
+        <button className="add-product-button"><FontAwesomeIcon icon={faSave} />Add</button>
       </form>
     </div>
   )

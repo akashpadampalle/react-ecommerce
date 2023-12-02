@@ -1,5 +1,11 @@
+.no-product {
+    color: gray;
+    font-size:  18px;
+    font-weight: 700;
+    text-align: center;
+}
 
-.product-buttons > * {
+.product-edit-submit-button {
     text-decoration: none;
     color: lightgray;
     border-radius: 5px;
@@ -9,17 +15,5 @@
     margin-right: 10px;
     border: none;
     outline: none;
-    cursor: pointer;
-}
-
-.product-button-edit {
-    background-color: rgb(204, 109, 0);
-}
-
-.product-button-delete {
-    background-color: rgb(122, 17, 17);
-}
-
-.product-button-cart {
     background-color: rgb(31, 100, 31);
 }

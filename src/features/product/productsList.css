@@ -13,6 +13,7 @@
     padding: 40px;
     border-radius: 10px;
     display: flex;
+    min-width: 600px;
 }
 
 .products-list-item-img {

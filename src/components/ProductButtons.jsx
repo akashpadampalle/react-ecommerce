@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTrash, faEdit, faCartShopping } from "@fortawesome/free-solid-svg-icons"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "./productButtons.css"
 import { useDispatch } from "react-redux"
 import { deleteProduct } from "../features/product/productsSlice"

@@ -40,3 +40,17 @@ open [https://react-ecommerce-phi-sand.vercel.app](https://react-ecommerce-phi-s
 
 ## Screenshots
 
+* Welcome page
+    ![Screenshot from 2023-12-29 10-20-59](https://github.com/akashpadampalle/react-ecommerce/assets/45806342/26bbb664-61d3-49b2-b5f6-43f05d1960ba)
+   
+* All products page
+    ![Screenshot from 2023-12-29 10-21-07](https://github.com/akashpadampalle/react-ecommerce/assets/45806342/c9712594-47cf-4d9e-a86e-818a37ee4322)
+
+* Add product page
+    ![Screenshot from 2023-12-29 10-21-14](https://github.com/akashpadampalle/react-ecommerce/assets/45806342/3876d879-c7bc-4b29-8736-06a455ca1508)
+
+* Cart page
+    ![Screenshot from 2023-12-29 10-21-18](https://github.com/akashpadampalle/react-ecommerce/assets/45806342/abcd1d08-bb97-4bc4-9474-19428a27617c)
+
+
+  

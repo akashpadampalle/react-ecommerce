@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice, createEntityAdapter, nanoid } from "@reduxjs/toolkit";
 import { deleteCartItem } from "../cart/cartSlice";
+import { errorToast, successToast } from "../../utils/toasts";
 
 const productsAdapter = createEntityAdapter({})
 const initialState = productsAdapter.getInitialState({
@@ -90,8 +91,10 @@ export const addProduct = createAsyncThunk("products/add", async (product, { dis
             }
         )
 
+        successToast(`product ${product.title} added.`)
+
     } catch (error) {
-        console.log(error)
+        errorToast("enable to add product")
         dispatch(removeOneProduct(id))
 
     }
@@ -118,8 +121,9 @@ export const updateProduct = createAsyncThunk("products/update", async (product,
                 body: JSON.stringify(product)
             }
         )
+        successToast(`product ${product.title} is updated.`)
     } catch (error) {
-        console.log(error)
+        errorToast(`unable to update product ${product.title}.`)
         dispatch(updateOneProduct(existingProduct))
     }
     
@@ -140,8 +144,9 @@ export const deleteProduct = createAsyncThunk("products/delete", async (id, { ge
             `https://my-json-server.typicode.com/akashpadampalle/FakeApi/products/${id}`,
             { method: "DELETE" }
         )
+        successToast("product delete.")
     } catch (error) {
-        console.log(error)
+        errorToast("unable to delete product.")
         dispatch(addOneProduct(existingProduct))
     }
 

@@ -1,8 +1,42 @@
-# React + Vite
+# Ecommerce React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this project is build using vit framework as an Conding Ninjas Frontend skill test
 
-Currently, two official plugins are available:
+## Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* clone git repository
+  
+  ```bash
+  git clone https://github.com/akashpadampalle/react-ecommerce.git
+  ```
+* change working directory
+  
+  ```bash
+  cd react-ecommerce
+  ```
+* change working directory
+  
+  ```bash
+  npm install
+  ```
+
+## Usage
+
+* run project
+  
+  ```bash
+  npm start
+  ```
+* or, run development
+  
+  ```bash
+  npm run dev
+  ```
+* open  [http://localhost:5173/](http://localhost:5173/) in your browser
+
+## Live Demo
+
+open [https://react-ecommerce-phi-sand.vercel.app](https://react-ecommerce-phi-sand.vercel.app/) it in your browser
+
+## Screenshots
+

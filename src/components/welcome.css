@@ -1,0 +1,25 @@
+.welcome-container {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.welcome-heading {  
+    color: rgb(216, 214, 214);
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.welcome-heading > span {
+    color: rgb(131, 182, 182);
+} 
+
+.welcome-subtitle {
+    color: rgb(124, 123, 123);
+    margin: -20px;
+}

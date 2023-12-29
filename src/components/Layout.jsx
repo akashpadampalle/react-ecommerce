@@ -1,3 +1,4 @@
+import "./layout.css"
 import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
@@ -28,13 +29,13 @@ const Layout = () => {
     }
 
     return (
-        <>
+        <div className='layout-container'>
             <Navbar />
             <main className="main-container">
                 <Outlet />
             </main>
 
-        </>
+        </div>
 
     )
 }
